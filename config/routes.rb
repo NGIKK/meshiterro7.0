@@ -8,7 +8,7 @@ Rails.application.routes.draw do
      get '/users/sign_out' => 'devise/sessions#destroy'
   end
   
-  resources :post_images,only: [:new,:create,:index,:show]
+  resources :post_images,only: [:new,:create,:index,:show,:destroy]
   
   # get 'postimages/new'
   # get 'postimages/index'
