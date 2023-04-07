@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   end
   
   resources :post_images,only: [:new,:create,:index,:show,:destroy]
-  resources :useers,only: [:show,:edit]
+  resources :users,only: [:show,:edit]
   # get 'postimages/new'
   # get 'postimages/index'
   # get 'postimages/show'
